@@ -28,13 +28,13 @@ preamble body = do
   env "document" body
 
 
-leftHandK = [["q","w","f","p","g"]
-            ,["a","r","s","t","d"]
-            ,["z","x","c","v","b"]]
+leftHandK = [["q","d","r","w","b"]
+            ,["a","s","h","t","g"]
+            ,["z","x","m","c","v"]]
 
-rightHandK = [["j","l","u","y",";"," "]
-             ,["h","n","e","i","o","'"]
-             ,["k","m",",",".","/"," "]]
+rightHandK = [["j","f","u","p",";"," "]
+             ,["y","n","e","o","i","'"]
+             ,["k","l",",",".","/"," "]]
 
 upKey c = case [c] of
   "'" -> head "\""
