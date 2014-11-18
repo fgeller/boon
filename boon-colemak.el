@@ -24,6 +24,9 @@
 (define-key boon-moves-map (kbd "k") 'boon-switch-mark) ; bacK to marK
 (define-key boon-moves-map (kbd "K") 'boon-switch-mark-quick) ; quicK bacK to marK
 
+(define-key boon-moves-map (kbd "l") 'ag-project)
+(define-key boon-moves-map (kbd "L") 'ag)
+
 (define-key boon-moves-map (kbd "j")  'boon-find-char-backward)
 (define-key boon-moves-map (kbd "J")  'boon-find-char-forward)
 (define-key boon-moves-map (kbd "u")  'previous-line)
