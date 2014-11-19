@@ -63,8 +63,8 @@
 ;; bottom row: actions
 (define-key boon-helm-command-map (kbd "z")        'helm-select-3rd-action)
 (define-key boon-helm-command-map (kbd "x")        'helm-select-2nd-action)
-(define-key boon-helm-command-map (kbd "m")        'boon-c-map)
-(define-key boon-helm-command-map (kbd "c")        'boon-helm-set-insert-state) ;; for consistency
+(define-key boon-helm-command-map (kbd "c")        'boon-c-map)
+
 (define-key boon-helm-command-map (kbd "v")        'helm-execute-persistent-action)
 
 (define-key boon-helm-command-map (kbd "'")        'helm-toggle-all-marks)
@@ -162,11 +162,11 @@
 ;; x
 (define-key boon-command-map (kbd "x") boon-x-map)
 ;; c
-(define-key boon-command-map (kbd "m") boon-c-map)
+(define-key boon-command-map (kbd "c") boon-c-map)
 ;; v
-(define-key boon-command-map (kbd "C-c") 'boon-open-line-and-insert)
-(define-key boon-command-map (kbd "C") 'boon-open-next-line-and-insert)
-(define-key boon-command-map (kbd "c") 'boon-set-insert-like-state) ; 'v' looks like an insertion mark
+;(define-key boon-command-map (kbd "C-c") 'boon-open-line-and-insert)
+;(define-key boon-command-map (kbd "C") 'boon-open-next-line-and-insert)
+;(define-key boon-command-map (kbd "c") 'boon-set-insert-like-state) ; 'v' looks like an insertion mark
 ;; b
 (define-key boon-command-map (kbd "V") 'boon-copy-to-register)
 (define-key boon-command-map (kbd "v") 'insert-register)
