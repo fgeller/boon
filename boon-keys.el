@@ -35,12 +35,13 @@
   "Push back some key events (as KBD-STRING) in the queue."
   (setq unread-command-events
         (append (kbd kbd-string) unread-command-events)))
-  
+
 (define-key boon-c-map "!" (lambda () (interactive) (boon-push-events "C-c !")))
 (define-key boon-c-map " " (lambda () (interactive) (boon-push-events "C-c C-SPC")))
 (define-key boon-c-map "," (lambda () (interactive) (boon-push-events "C-c C-,")))
 (define-key boon-c-map "." (lambda () (interactive) (boon-push-events "C-c C-.")))
 (define-key boon-c-map "=" (lambda () (interactive) (boon-push-events "C-c C-=")))
+(define-key boon-c-map "'" (lambda () (interactive) (boon-push-events "C-c '")))
 (define-key boon-c-map "[" (lambda () (interactive) (boon-push-events "C-c [")))
 (define-key boon-c-map "]" (lambda () (interactive) (boon-push-events "C-c ]")))
 (define-key boon-c-map "?" (lambda () (interactive) (boon-push-events "C-c C-?")))
