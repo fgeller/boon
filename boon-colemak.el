@@ -40,8 +40,9 @@
 (define-key boon-moves-map (kbd "N")  'boon-smarter-upward)
 (define-key boon-moves-map (kbd "I")  'boon-smarter-downward)
 (define-key boon-moves-map (kbd ",")  'boon-beginning-of-expression)
-(define-key boon-moves-map (kbd ".")  'isearch-forward)
-(define-key boon-moves-map (kbd "/")  'isearch-backward)
+(define-key boon-moves-map (kbd "[")  'isearch-forward)
+(define-key boon-moves-map (kbd "{")  'isearch-backward)
+(define-key boon-moves-map (kbd "/")  'undo)
 (define-key boon-moves-map (kbd "e")  'backward-char)
 (define-key boon-moves-map (kbd "o")  'forward-char)
 (define-key boon-moves-map (kbd "<")  'boon-beginning-of-region)
@@ -176,7 +177,6 @@
 (define-key boon-command-map (kbd "C-p") 'scroll-down-line)
 (define-key boon-command-map (kbd "y") 'ace-jump-word-mode) ; hop
 (define-key boon-command-map (kbd "Y") 'ace-jump-char-mode) ; Hop
-(define-key boon-command-map (kbd "[") 'boon-toggle-mark)
 (define-key boon-command-map (kbd "'") 'c/helm-jump)
 
 (provide 'boon-colemak)
