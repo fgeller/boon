@@ -19,10 +19,6 @@
 (define-key boon-helm-command-map (kbd "<tab>")    'helm-select-action)
 (define-key boon-helm-command-map (kbd "C-<RET>")  'helm-execute-persistent-action)
 
-(define-key boon-command-map [(return)] 'undefined)
-(define-key boon-command-map (kbd "<RET>") 'undefined)
-(define-key boon-command-map [(backspace)] 'undefined)
-(define-key boon-command-map (kbd "<DEL>") 'undefined)
 (define-key boon-command-map "`" 'boon-toggle-case)
 
 (define-key boon-command-map "_" 'redo)
