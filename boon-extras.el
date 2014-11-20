@@ -136,6 +136,7 @@
 (define-key boon-x-map "x" 'helm-M-x)
 (define-key boon-x-map "y" boon-flycheck-map)
 (define-key boon-x-map "e" 'eval-last-sexp)
+(define-key boon-x-map "c" 'save-buffers-kill-terminal)
 
 (provide 'boon-extras)
 ;;; boon-extras.el ends here
