@@ -84,9 +84,5 @@ The selection is between (as BEG END)."
    (isearch-mode forward nil nil nil)
    (isearch-yank-string selection)))
 
-(defadvice isearch-exit (after ysph-hl-search activate compile)
-  "After isearch, highlight the search term."
-  (setq boon-regexp isearch-string))
-
 (provide 'boon-search)
 ;;; boon-search.el ends here
