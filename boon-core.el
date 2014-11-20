@@ -151,8 +151,6 @@
     (message "Boon disabled")
     )))
 
-(add-hook 'minibuffer-setup-hook 'boon-minibuf-hook)
-
 (defun boon-minibuf-hook ()
   "Detect if the minibuffer is a helm minibuffer, and activate boon helm command mode if so."
   (cl-flet ((eq-if-bound (sym val) (and (boundp sym) (eq (eval sym) val))))
