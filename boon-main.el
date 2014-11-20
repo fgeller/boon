@@ -315,7 +315,7 @@ line."
 (defun boon-open-line-and-insert ()
   "Open a new line, indented as much as the current one, and switch to insert mode."
   (interactive)
-  (let ((indent-lvl (boon-current-line-indentation))) 
+  (let ((indent-lvl (boon-current-line-indentation)))
       (beginning-of-line)
       (open-line 1)
       (insert (make-string indent-lvl 32))
