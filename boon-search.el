@@ -25,7 +25,6 @@
 (defun boon-qsearch (forward)
   "Re-search the current regexp, in the direction specified (as FORWARD).
 Moreover, highlight the regexp."
-  (boon-highlight-regexp)
   (boon-search-regexp forward)
   (deactivate-mark))
 
@@ -87,8 +86,7 @@ The selection is between (as BEG END)."
 
 (defadvice isearch-exit (after ysph-hl-search activate compile)
   "After isearch, highlight the search term."
-  (setq boon-regexp isearch-string)
-  (boon-highlight-regexp))
+  (setq boon-regexp isearch-string))
 
 (provide 'boon-search)
 ;;; boon-search.el ends here
